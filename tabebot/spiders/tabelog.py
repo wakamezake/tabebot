@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 import re
-
+from itertools import product
 from scrapy.spiders import CrawlSpider, Rule
 from scrapy.linkextractors.lxmlhtml import LxmlLinkExtractor
 from scrapy.http import Request
@@ -155,7 +155,7 @@ class TabelogSpider(CrawlSpider):
 
     start_urls = [
         'http://tabelog.com/{0}/rstLst/{1}/?SrtT=rt&Srt=D'.format(prefecture, category)
-        for prefecture in prefectures for category in categories]
+        for prefecture, category in product(prefectures, categories)]
 
     rules = [
         # Follow business list pagination
