@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 pyquery = "==1.2.6"
-Scrapy = "==0.24.4"
+Scrapy = "==1.7.3"
 service_identity = "*"
 
 [dev-packages]

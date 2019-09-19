@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8815cbca8431c475150c3f564c60053a16ad9e383640c12b903b065fa9a43bb2"
+            "sha256": "bb5714bae8f1d098c82bf6ccbea41de0ce7d857e8e559aa9c644e4365869a1ff"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -151,7 +151,15 @@
                 "sha256:e9c028b5897901361d81a4718d1db217b716424a0283afe9d6735fe0caf70f79",
                 "sha256:fe489d486cd00b739be826e8c1be188ddb74c7a1ca784d93d06fda882a6a1681"
             ],
+            "markers": "python_version != '3.4'",
             "version": "==4.4.1"
+        },
+        "parsel": {
+            "hashes": [
+                "sha256:4da4262ba4605573b6b72a5f557616a2fc9dee7a47a1efad562752a28d366723",
+                "sha256:74f8e9d3b345b14cb1416bd777a03982cde33a74d8b32e0c71e651d07d41d40a"
+            ],
+            "version": "==1.5.2"
         },
         "pyasn1": {
             "hashes": [
@@ -172,6 +180,13 @@
                 "sha256:a988718abfad80b6b157acce7bf130a30876d27603738ac39f140993246b25b3"
             ],
             "version": "==2.19"
+        },
+        "pydispatcher": {
+            "hashes": [
+                "sha256:5570069e1b1769af1fe481de6dd1d3a388492acddd2cdad7a3bde145615d5caf",
+                "sha256:5be4a8be12805ef7d712dd9a93284fb8bc53f309867e573f653a72e5fd10e433"
+            ],
+            "version": "==2.0.5"
         },
         "pyhamcrest": {
             "hashes": [
@@ -203,11 +218,11 @@
         },
         "scrapy": {
             "hashes": [
-                "sha256:286dfc278f575f5176892f45179b4ce25dcdc6270bbf2146a2f1ace39ba24d00",
-                "sha256:3383b2999bed657f8eda16416e24ff7badbc297dd8b65821cc0014c555c6422a"
+                "sha256:1d2b2672049c3e7ebcab9736bbf759ec32d4cbf598292067737806453c208f95",
+                "sha256:fe5a40177960e97d42d1c752a73edb40f76a85a24076dec8535cffa499eb08c8"
             ],
             "index": "pypi",
-            "version": "==0.24.4"
+            "version": "==1.7.3"
         },
         "service-identity": {
             "hashes": [
@@ -246,6 +261,7 @@
                 "sha256:f4f0af14d288140ecb00861a3bd1e0b94ffdc63057cc1abe8b9dc84f6b6dcf18",
                 "sha256:f985f31e3244d18610816b55becf8fbf445c8e30fe0731500cadaf19f296baf0"
             ],
+            "markers": "python_version != '3.4'",
             "version": "==19.7.0"
         },
         "w3lib": {
