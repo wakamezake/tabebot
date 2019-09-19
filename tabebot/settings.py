@@ -22,7 +22,7 @@ EXTENSIONS = {
 RETRY_HTTP_CODES = [500, 502, 503, 504, 400, 403, 404, 408]
 
 DOWNLOADER_MIDDLEWARES = {
-    'scrapy.contrib.downloadermiddleware.retry.RetryMiddleware': 90,
+    'scrapy.downloadermiddlewares.retry.RetryMiddleware': 90,
 }
 
 ITEM_PIPELINES = {
