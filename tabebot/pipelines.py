@@ -33,10 +33,10 @@ def convert_to_utf8(json_obj):
     '''
     if isinstance(json_obj, dict):
         return dict((convert_to_utf8(key), convert_to_utf8(value))
-                    for key, value in json_obj.iteritems())
+                    for key, value in json_obj.items())
     elif isinstance(json_obj, list):
         return [convert_to_utf8(element) for element in json_obj]
-    elif isinstance(json_obj, unicode):
+    elif isinstance(json_obj, str):
         return json_obj.encode('utf-8')
     elif isinstance(json_obj, float):
         return PrettyFloat(json_obj)
