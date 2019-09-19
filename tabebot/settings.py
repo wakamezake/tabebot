@@ -16,7 +16,7 @@ RETRY_TIMES = 10
 DOWNLOAD_DELAY = 3
 
 EXTENSIONS = {
-    'scrapy.contrib.spiderstate.SpiderState': 500,
+    'scrapy.extensions.spiderstate.SpiderState': 500,
 }
 
 RETRY_HTTP_CODES = [500, 502, 503, 504, 400, 403, 404, 408]
