@@ -7,7 +7,7 @@ import json
 from collections import defaultdict
 
 from scrapy import signals
-from scrapy.contrib.exporter import BaseItemExporter
+from scrapy.exporters import BaseItemExporter
 from scrapy.exceptions import DropItem
 from scrapy.xlib.pydispatch import dispatcher
 
