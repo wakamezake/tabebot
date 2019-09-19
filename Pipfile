@@ -1,0 +1,14 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+pyquery = "==1.2.6"
+Scrapy = "==0.24.4"
+service_identity = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.6"
