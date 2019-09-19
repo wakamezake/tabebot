@@ -13,6 +13,8 @@ NEWSPIDER_MODULE = 'tabebot.spiders'
 
 RETRY_TIMES = 10
 
+DOWNLOAD_DELAY = 3
+
 EXTENSIONS = {
     'scrapy.contrib.spiderstate.SpiderState': 500,
 }
