@@ -3,8 +3,8 @@
 
 import re
 
-from scrapy.contrib.spiders import CrawlSpider, Rule
-from scrapy.contrib.linkextractors.lxmlhtml import LxmlLinkExtractor
+from scrapy.spiders import CrawlSpider, Rule
+from scrapy.linkextractors.lxmlhtml import LxmlLinkExtractor
 from scrapy.http import Request
 from scrapy.selector import Selector
 
