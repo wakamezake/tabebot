@@ -153,9 +153,19 @@ class TabelogSpider(CrawlSpider):
         'SC0299',     # スイーツ（その他）
     ]
 
+    # start_urls = [
+    #     'http://tabelog.com/{0}/rstLst/{1}/
+    #     ?SrtT=rt&Srt=D'.format(prefecture, category)
+    #     for prefecture, category in product(prefectures, categories)]
+
+    # A1303 : sibuya/ebisu/daikanyama area
+    # A130301 : sibuya
     start_urls = [
-        'http://tabelog.com/{0}/rstLst/{1}/?SrtT=rt&Srt=D'.format(prefecture, category)
-        for prefecture, category in product(prefectures, categories)]
+        'http://tabelog.com/{}/{}/{}/rstLst/{}/'
+        '?RdoCosTp=1&LstCos=1&LstCosT=2&station_id=4698'.format("tokyo",
+                                                                "A1303",
+                                                                "A130301",
+                                                                "lunch")]
 
     rules = [
         # Follow business list pagination
